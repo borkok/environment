@@ -4,6 +4,8 @@ git config --global user.email "kinga@gmail.com"
 
 **git help**
 
+**git cat-file** `<sha obiektu>` `można podejrzeć obiekt w .git/object`
+
 **git init**
 
 **git add .**  
@@ -19,6 +21,9 @@ git log --since="2012-06-20" --until="2012-07-03"
 git log 293848ad..adfe32e444  
 git log --graph  
 git log --oneline --graph --all --decorate
+
+
+**git reflog -2 HEAD** `Pokazuje na jakie 2 commity ostatnio HEAD wskazywał (HEAD jest detached, ale chcesz wrócić i nie wiesz jakie SHA tam było)`
 
 **git show** ad34ee34f
 
@@ -66,6 +71,10 @@ git branch `<nazwa>`  `tworzy nowy branch`
 git branch --move oldname newname
 git branch --delete `<nazwa>`
 
+git branch foo `tworzy nową gałąź, ale nie zmienia HEAD - nadal jesteśmy na bieżącej gałęzi`
+git checkout -b foo `i tworzy i przesuwa HEAD`
+git tag foo `otagowuje ostatni commit`
+
 **git stash save**  `save our changes + runs git reset hard HEAD`
 git stash list
 git stash show -p stash@{0}        `pokazuje diff bransh vs stash`
@@ -86,6 +95,14 @@ git remote rm origin
 
 **git merge** origin/master
 git merge --abort    \(jest konflikt i nie chcesz kontynuować merge’a\)
+
+**git rebase** origin/maste `merge robi tylko jeden commit, rebase przenosi całą historię, ew. konflikty rozwiązujesz krok po kroku (każdy commit po kolei), nie jeden wielki merge z wielką listą konfliktów`
+
+**git cherry-pick** C34ab
+   merguje do bieżącej gałęzi commit o wskazanym SHA (tutaj C34ab)
+   ale tylko zmiany z C34ab, bez zmian z C2, który jest parentem
+
+
 
 **git pull** = git fetch + git merge
 
