@@ -1,4 +1,4 @@
-merging branches
+Merging branches
 
 1. git diff a..b - aby zobaczyć czym się różni
 
