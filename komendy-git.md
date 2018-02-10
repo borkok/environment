@@ -80,39 +80,17 @@ git remote rm origin
 
 **git push** -u origin master 
 
-git clone URL \[opcj. nazwa\_folderu\]
+**git clone URL** \[opcj. nazwa\_folderu\]
 
-git fetch    \(1. fetch often; 2. fetch before work \(every morning\); 3. fetch before push\)
+**git fetch**   `1. fetch often; 2. fetch before work (every morning); 3. fetch before push (1. fetch 2. merge 3. push)`
 
-```
-    \(1. fetch 2. merge 3. push\)
-```
-
-git merge origin/master
+**git merge** origin/master
 git merge --abort    \(jest konflikt i nie chcesz kontynuować merge’a\)
 
-
-git pull = git fetch + git merge
+**git pull** = git fetch + git merge
 
 git branch nowy\_branch origin/nowy\_branch
+git checkout -b nowy\_branch origin/nowy\_branch `utwórz nowy branch jako kopię brancha z origin`
 
-git checkout -b nowy\_branch origin/nowy\_branch
-
-git push origin --delete &lt;nazwa\_brancha&gt;
-
-merging branches
-
-1. git diff a..b - aby zobaczyć czym się różni
-
-2. git checkout a - zawsze najpierw checkout receiver
-
-3. git merge b - merges b to a
-
-4. git log - pojawia sie nowy commit w a
-
-5. git diff a..b - teraz pusty
-
-6. git branch --merged - wyświetli a i b
-
-tip: always start merge with a clean working directory
+git push origin --delete `<nazwa_brancha>`
 
