@@ -15,8 +15,7 @@ My work
 &gt; git push -u origin feedback\_form
 
 
-
-Lynda's work
+Carol's work
 
 &gt; git checkout master
 
