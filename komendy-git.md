@@ -34,8 +34,8 @@ git diff treeishA..treeishB
 
 **git mv** `zmienia nazwę pliku`
 
-**git checkout** '<nazwa-brancha>'  `nie pozwoli Ci na zmianę brancha, jeżeli masz nieskomitowane zmiany w working tree, chyba że użyjesz opcji -f / --force`
-git checkout -- `<nazwa pliku>`  `przywraca wersję pliku z obecnego stanu w local repository`
+**git checkout** `<nazwa-brancha>`  `nie pozwoli Ci na zmianę brancha, jeżeli masz nieskomitowane zmiany w working tree, chyba że użyjesz opcji -f / --force`
+git checkout -- <nazwa pliku>  `przywraca wersję pliku z obecnego stanu w local repository`
 git checkout -- .   `discard changes in working dir`  
 git checkout `<SHA wcześniejszego commita>` --`<nazwa pliku>`  `wrzuca tylko do staging, nie do working dir`  
 
@@ -45,55 +45,40 @@ git reset --soft      `przesuwa HEAD na wskazany SHA, domyślnie ostatni commit`
 git reset --mixed     `domyślny, zmienia staging, nie zmienia working`
 git reset --hard      `destructive, zmienia też working dir`
 
-**git revert** `SHA commit` `git revert is used to record some new commits to reverse the effect of some earlier commits (often only a faulty one). If you want to throw away all uncommitted changes in your working directory, you should see git-reset[1], particularly the --hard option. If you want to extract specific files as they were in another commit, you should see git-checkout[1], specifically the git checkout <commit> -- <filename> syntax. Take care with these alternatives as both will discard uncommitted changes in your working directory.`
+**git revert** `<SHA commit>` `git revert is used to record some new commits to reverse the effect of some earlier commits (often only a faulty one).`
 
-git clean -f     \(removes all untracked files\)
+If you want to throw away all uncommitted changes in your working directory, you should see `git-reset`, particularly the `--hard option`. If you want to extract specific files as they were in another commit, you should see `git-checkout`, specifically the `git checkout <commit> -- <filename>` syntax. Take care with these alternatives as both will discard uncommitted changes in your working directory.
 
-git clean -n     \(tylko je wypisuje\)
+**git clean -f**  `removes all untracked files`
+git clean -n `tylko je wypisuje`
 
-.gitignore    \(tu wypisz pliki, których ma git nie śledzić\)
-
+**plik .gitignore**  `tu wypisz pliki, których ma git nie śledzić`
 git config --global core.excludesfile ~/.gitignore\_global
 
-.gitkeep    \(utrzymuj ten folder\)
+**plik .gitkeep** `pusty plik dodany tylko po to, aby git utrzymywał ten pusty folder`
 
-git ls-tree HEAD
+**git ls-tree HEAD**
 
-git branch    \(listuje lokalne branche\)
-
+**git branch** `listuje lokalne branche`
 git branch -r
-
 git branch -a
-
-git branch &lt;nazwa&gt;    \(tworzy nowy branch\)
-
+git branch `<nazwa>`  `tworzy nowy branch`
 git branch --move oldname newname
+git branch --delete `<nazwa>`
 
-git branch --delete &lt;nazwa&gt;
-
-git merge --abort    \(jest konflikt i nie chcesz kontynuować merge’a\)
-
-git stash save        \(save our changes + runs git reset hard HEAD\)
-
+**git stash save**  `save our changes + runs git reset hard HEAD`
 git stash list
-
-git stash show -p stash@{0}        \(pokazuje diff bransh vs stash\)
-
-git stash pop        \(wyciąga ze stasha i próbuje zmergować z working dir\)
-
-git stash apply        \(kopiuje ze stasha\)
-
+git stash show -p stash@{0}        `pokazuje diff bransh vs stash`
+git stash pop        `wyciąga ze stasha i próbuje zmergować z working dir`
+git stash apply        `kopiuje ze stasha`
 git stash drop stash@{0}
-
 git stash clear
 
-git remote add origin [https://github.com/borkok/skyscrapers.git](https://github.com/borkok/skyscrapers.git)
-
-git remote add &lt;alias&gt; &lt;url&gt;
-
+**git remote add origin** [https://github.com/borkok/skyscrapers.git](https://github.com/borkok/skyscrapers.git)
+git remote add `alias` `url`
 git remote rm origin
 
-git push -u origin master
+**git push** -u origin master 
 
 git clone URL \[opcj. nazwa\_folderu\]
 
@@ -104,6 +89,8 @@ git fetch    \(1. fetch often; 2. fetch before work \(every morning\); 3. fetch 
 ```
 
 git merge origin/master
+git merge --abort    \(jest konflikt i nie chcesz kontynuować merge’a\)
+
 
 git pull = git fetch + git merge
 
