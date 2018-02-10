@@ -1,8 +1,8 @@
-My work
+**My work**
 
 &gt; git checkout master
 
-&gt; git fetch 
+&gt; git fetch
 
 &gt; git merge origin/master
 
@@ -14,14 +14,13 @@ My work
 
 &gt; git push -u origin feedback\_form
 
-
-Carol's work
+**Carol's work**
 
 &gt; git checkout master
 
 &gt; git fetch
 
-&gt; git branch -r 
+&gt; git branch -r
 
 &gt; git merge origin/master
 
@@ -37,9 +36,7 @@ Carol's work
 
 &gt; git push
 
-
-
-My work
+**My work**
 
 &gt; git fetch
 
@@ -56,8 +53,4 @@ My work
 &gt; git merge feedback\_form
 
 &gt; git push
-
-
-
-
 

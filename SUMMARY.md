@@ -6,5 +6,5 @@
 * [GIT cheat sheet](git-cheat-sheet.md)
 * [GIT komendy](komendy-git.md)
 * [GIT przykładowy workflow](git-przykladowy-workflow.md)
-* [GIT more about merge](git-merge.md)
+* [GIT więcej o merge](git-merge.md)
 

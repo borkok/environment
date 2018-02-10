@@ -1,4 +1,4 @@
-Merging branches
+**Merging branches**
 
 1. git diff a..b - aby zobaczyć czym się różni
 
@@ -12,5 +12,5 @@ Merging branches
 
 6. git branch --merged - wyświetli a i b
 
-tip: always start merge with a clean working directory
+_Tip_: always start merge with a clean working directory
 
