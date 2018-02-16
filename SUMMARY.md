@@ -8,4 +8,5 @@
 * [GIT przykładowy workflow](git-przykladowy-workflow.md)
 * [GIT więcej o merge](git-merge.md)
 * [GIT notatki z prezentacji](git-notatki-z-prezentacji.md)
+* [GIT upstream branch](git-upstream-branch.md)
 

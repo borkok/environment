@@ -15,6 +15,12 @@ branch
 3. git rebase origin/master \`dokleja commity z dev-1 do origin/master; ładniej wygląda, nie ma commitów mergowych, zostawiam historię całą sprzed rebase \(merge robi tylko jeden commit, rebase przenosi całą historię, ew. konflikty rozwiązujesz krok po kroku \(każdy commit po kolei\), nie jeden wielki merge z wielką listą konfliktów\)  
 4. git push
 
+_Przykład 2 \(dla production-deployment-scripts\)_
+
+1. git commit -am "jakiś tekst"
+2. git pull --rebase  \(fetch + rebase z upstreamem\)
+3. git push
+
 **Inne komendy:**  
 git rebase develop -i `można wskazać, które commity biorę (pick)`
 
