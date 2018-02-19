@@ -16,6 +16,11 @@ Skrypty z INSERTami powinny być wykonywane w okienku serwisowym.
 
 1. Sigma utrzymuje bufor wygenerowanych w przód identyfikatorów.
 2. Wdrożenie skryptu w ciągu dnia może spowodować, że SQL Server przydzieli dla rekordu identyfikator taki sam, jak zarezerwowany przez Sigmę
+3. ```
+   @SequenceGenerator
+   (name = "sqIdClientOperationStackEntry", sequenceName = "sqClientOperationStackEntry", allocationSize = 100)
+   ```
+
 
 
 
