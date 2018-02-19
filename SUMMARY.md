@@ -12,4 +12,5 @@
 * GIT vim esc+"::wq"+enter
 * [Wdrożenie skryptu na produkcję](wdrozenie-skryptu-na-produkcje.md)
 * [Odśwież external libraries](odswiez-external-libraries.md)
+* [Zmiany w kilku modułach na raz](zmiany-w-kilku-modulach-na-raz.md)
 
