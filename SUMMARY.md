@@ -16,4 +16,5 @@
 * [Odśwież external libraries](odswiez-external-libraries.md)
 * [Zmiany w kilku modułach na raz](zmiany-w-kilku-modulach-na-raz.md)
 * [IntelliJ Automatyczna inspekcja kodu](intellij-automatyczna-inspekcja-kodu.md)
+* [GIT zmiana edytora](git-zmiana-edytora.md)
 
