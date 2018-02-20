@@ -23,4 +23,3 @@ Skrypty z INSERTami powinny być wykonywane w okienku serwisowym.
 
 
 
-
