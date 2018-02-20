@@ -9,6 +9,7 @@
 * [GIT więcej o merge](git-merge.md)
 * [GIT notatki z prezentacji](git-notatki-z-prezentacji.md)
 * [GIT upstream branch](git-upstream-branch.md)
+* [GIT git push -f origin &lt;branchname&gt;](git-git-push-f-origin-branchname.md)
 * GIT vim esc+"::wq"+enter
 * [Wdrożenie skryptu na produkcję](wdrozenie-skryptu-na-produkcje.md)
 * [Odśwież external libraries](odswiez-external-libraries.md)
