@@ -11,8 +11,9 @@
 * [GIT upstream branch](git-upstream-branch.md)
 * GIT vim esc+"::wq"+enter
 * [GIT rebase/amend zmienia SHA commita](git-git-push-f-origin-branchname.md)
+* [GIT git rebase -i @~2](git-git-rebase-i-~2.md)
 * [Wdrożenie skryptu na produkcję](wdrozenie-skryptu-na-produkcje.md)
 * [Odśwież external libraries](odswiez-external-libraries.md)
 * [Zmiany w kilku modułach na raz](zmiany-w-kilku-modulach-na-raz.md)
-* [GIT git rebase -i @~2](git-git-rebase-i-~2.md)
+* [IntelliJ Automatyczna inspekcja kodu](intellij-automatyczna-inspekcja-kodu.md)
 
