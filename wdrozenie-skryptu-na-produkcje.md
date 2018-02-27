@@ -23,8 +23,14 @@ Skrypty z INSERTami powinny być wykonywane w okienku serwisowym.
 
 Odblokowanie i standardowe UNDO-REDO
 
-1. Zobacz rozwiązanie dla WAR-4750 wraz ze zgłoszonym SD. Są tam dołączone skrypty weryfikacyjne dla undo-redo
+1. Zobacz rozwiązanie dla WAR-4750 wraz ze zgłoszonym SD. Są tam dołączone skrypty weryfikacyjne dla undo-redo.
 2. Do blokowanie stosu i odblokowania jest przygotowany skrypt generujący skrypty.
+3. Zawsze sprawdź najpierw czy nie chodzi EOD
+
+-- czy chodzi EOD?
+
+SELECT \* FROM \[Configuration\].\[dbo\].SystemParam sp where sp.symbol = 'EOD\_PROCESSING';   
+select \* from Core..EodExecution order by id desc 
 
 
 
