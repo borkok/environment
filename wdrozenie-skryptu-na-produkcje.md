@@ -21,5 +21,10 @@ Skrypty z INSERTami powinny być wykonywane w okienku serwisowym.
    (name = "sqIdClientOperationStackEntry", sequenceName = "sqClientOperationStackEntry", allocationSize = 100)
    ```
 
+Odblokowanie i standardowe UNDO-REDO
+
+1. Zobacz rozwiązanie dla WAR-4750 wraz ze zgłoszonym SD. Są tam dołączone skrypty weryfikacyjne dla undo-redo
+2. Do blokowanie stosu i odblokowania jest przygotowany skrypt generujący skrypty.
+
 
 
