@@ -11,6 +11,7 @@ Jeżeli skrypt jest ok, to
 2. skrypt na początku niech ma nazwę WARnnnn
 3. commit, pull, push
 4. Złóż SD na wdrożenie skryptu na produkcję
+5. Dopisz się do Lista wdrożeń! https://bestconfluence/pages/viewpage.action?pageId=10487245&src=breadcrumbs-parent
 
 Skrypty z INSERTami powinny być wykonywane w okienku serwisowym.
 
@@ -29,8 +30,7 @@ Odblokowanie i standardowe UNDO-REDO
 
 -- czy chodzi EOD?
 
-SELECT \* FROM \[Configuration\].\[dbo\].SystemParam sp where sp.symbol = 'EOD\_PROCESSING';   
-select \* from Core..EodExecution order by id desc 
+SELECT \* FROM \[Configuration\].\[dbo\].SystemParam sp where sp.symbol = 'EOD\_PROCESSING';
 
-
+select \* from Core..EodExecution order by id desc
 
