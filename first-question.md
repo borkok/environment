@@ -15,6 +15,7 @@
 |gdzie jestem?|git status|Sprawdzenie stanu staging i working tree.|
 |build failed|przyczyna: Sonar|Sprawdź błędy na sonarze i popraw kod zgodnie z zaleceniami.|
 |poprawiłam kod, co dalej?||Ponownie skomituj zmiany: <br/>1. **git commit --amend** (jeżeli chcesz uzupełnić ten sam commit co poprzednio) <br/>2. **git push origin _nowy-branch_ -f** |
+|wycofałam commity, zrobiłam nowy, co dalej?| |git push origin _nowy-branch_ -f|
 
 
 
