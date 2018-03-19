@@ -18,4 +18,5 @@
 * [Zmiany w kilku modułach na raz](zmiany-w-kilku-modulach-na-raz.md)
 * [IntelliJ Automatyczna inspekcja kodu](intellij-automatyczna-inspekcja-kodu.md)
 * [Jenkins środowisko testowe dev](jenkins-srodowisko-testowe-dev.md)
+* [GIT HEAD~2 vs HEAD^2](git-head~2-vs-head2.md)
 
