@@ -18,7 +18,5 @@ Apply the change introduced by the commit at the tip of the master branch and cr
 
 The command git cherry-pick commit applies the changes introduced by the named commit on the current branch. It will introduce a new, distinct commit.
 
-**Strictly speaking, using git cherry-pick doesn’t alter the existing history within a repository; instead, it adds to the history.** As with other Git operations that introduce changes via the process of applying a diff, you may need to resolve conflicts to fully apply the changes from the given commit
-
-. The command git cherry-pick is typically used to introduce particular commits from one branch within a repository onto a different branch. A common use is to forward- or back-port commits from a maintenance branch to a development branch.
+**Strictly speaking, using git cherry-pick doesn’t alter the existing history within a repository; instead, it adds to the history.** As with other Git operations that introduce changes via the process of applying a diff, you may need to resolve conflicts to fully apply the changes from the given commit. The command git cherry-pick is typically used to introduce particular commits from one branch within a repository onto a different branch. A common use is to forward- or back-port commits from a maintenance branch to a development branch.
 
