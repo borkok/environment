@@ -19,4 +19,6 @@
 * [Zmiany w kilku modułach na raz](zmiany-w-kilku-modulach-na-raz.md)
 * [IntelliJ Automatyczna inspekcja kodu](intellij-automatyczna-inspekcja-kodu.md)
 * [Jenkins środowisko testowe dev](jenkins-srodowisko-testowe-dev.md)
+* [GIT revert](git-revert.md)
+* [GIT cherry-pick](git-cherry-pick.md)
 
