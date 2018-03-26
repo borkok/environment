@@ -35,16 +35,19 @@ remote = origin
 merge = refs/heads/develop
 ```
 
-Szczegółowo wyjaśnione to jest tutaj: [https://longair.net/blog/2011/02/27/an-asymmetry-between-git-pull-and-git-push/](https://longair.net/blog/2011/02/27/an-asymmetry-between-git-pull-and-git-push/)
+Szczegółowo wyjaśnione to jest tutaj: [https://longair.net/blog/2011/02/27/an-asymmetry-between-git-pull-and-git-push](https://longair.net/blog/2011/02/27/an-asymmetry-between-git-pull-and-git-push/)/
 
 "By default, `git push origin` will update branches on the destination **with one with the same name on the source**, _instead of using the association defined by_ `git branch --track`, which `git pull origin` would use."
 
 Dalej jest wyjaśnione jak zachowają się te cztery komendy i dlaczego \(add-menu to nazwa nowego lokalnego brancha\):
 
-1. git push github add-menu
-2. git push github
-3. git push
-4. git push github HEAD
+1. **git push github add-menu** If:&lt;dst&gt; is omitted, the same ref as &lt;src&gt; will be updated.
+   So the command is equivalent togit push github add-menu:add-menu, which will create a new branch calledadd-menuon GitHub
+
+2. **git push github **for every branch that exists on the local side, the remote side is updated if a branch of the same name already exists on the remote side. Czyli nie założy nowego brancha
+3. **git push** Works like git push &lt;remote&gt;, where &lt;remote&gt; is the current branch’s remote \(or origin, if no remote is configured for the current branch\). Czyli tak samo jak w pkt. 2
+4. **git push github HEAD **A handy way to push the current branch to the same name on the remote.
+   In other words, in this example, that will end up being the same as _git push github add-menu:add-menu_, again creating an add-menu branch in the remote repository
 
 Pełna składnia **git push** to `git push <origin> <src>:<dst>`
 
