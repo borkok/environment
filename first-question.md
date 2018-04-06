@@ -1,3 +1,5 @@
+Zmiany do developa
+
 | Krok | Komenda | Opis |
 | :--- | :--- | :--- |
 |1| **git checkout -b **_nowy-branch_ | Utwórz nowy branch dedykowany do Twoich zmian. Przykładowe nazwy: dev-WAR-3989, dev-calculatorFix |
@@ -7,6 +9,8 @@
 |5|**git pull --rebase**| _git pull runs **git fetch** with the given parameters and calls **git merge** to merge the retrieved branch heads into the current branch. With --rebase, it runs **git rebase** instead of git merge._ |
 |6|**git push origin **_nowy-branch_ | Po rozwiązaniu ewentualnych konfliktów możesz wrzucić Twoją nową gałąź na origin. Uwaga: case-sensitive.|
 |7|**Gitlab > Create merge request**| Utwórz nowy merge request wskazując Tój nowy branch i branch docelowy. Upewnij się, że request zawiera wlaściwe zmiany. zaznacz opcję "Remove source branch". Submit -> spowoduje wywołanie builda na Jenkinsie|
+
+(!) Jeżeli zmiany są wprowadzane do hotfix, to po merge'u wykonaj jeszcze cherry-pick do developa - najlatwiej z poziomu gitlaba
 
 | Problem? | Komenda | Opis |
 | :--- | :--- | :--- |
