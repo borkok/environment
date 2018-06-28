@@ -8,7 +8,7 @@
 * [GIT więcej o merge](git-merge.md)
 * [GIT notatki z prezentacji](git-notatki-z-prezentacji.md)
 * [GIT upstream branch](git-upstream-branch.md)
-* GIT vim esc+"::wq"+enter
+* [GIT vim esc+"::wq"+enter](git-vim-esc+wq+enter.md)
 * [GIT rebase/amend zmienia SHA commita](git-git-push-f-origin-branchname.md)
 * [GIT git rebase -i @~2](git-git-rebase-i-~2.md)
 * [GIT zmiana edytora](git-zmiana-edytora.md)

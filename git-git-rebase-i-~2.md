@@ -25,8 +25,6 @@ To **drop a commit**, replace the command "pick" with "**drop**", **or **just** 
 
 If you want to **fold two or more commits into one**, replace the command "pick" for the second and subsequent commits with "**squash**" or "**fixup**". If the commits had different authors, the folded commit will be attributed to the author of the first commit. The suggested commit message for the folded commit is the concatenation of the commit messages of the first commit and of those with the "squash" command, but omits the commit messages of commits with the "fixup" command.
 
-
-
 Dodatkowa opcja --onto
 
 **git rebase --onto &lt;newbase-treeish&gt; &lt;oldbase-treeish&gt; &lt;treeish&gt;**
