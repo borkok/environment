@@ -17,4 +17,5 @@
 * [Zmiany w kilku modułach na raz](zmiany-w-kilku-modulach-na-raz.md)
 * [GIT revert](git-revert.md)
 * [GIT cherry-pick](git-cherry-pick.md)
+* [GIT alias](git-alias.md)
 
