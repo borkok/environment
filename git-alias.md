@@ -1,6 +1,4 @@
-
-
-zgodnie z opisem tutaj https://stackoverflow.com/questions/31099564/git-alias-with-multiple-commands-and-arguments 
+zgodnie z opisem tutaj [https://stackoverflow.com/questions/31099564/git-alias-with-multiple-commands-and-arguments](https://stackoverflow.com/questions/31099564/git-alias-with-multiple-commands-and-arguments)
 
 użyłam 'old [shell function technique](https://stackoverflow.com/a/3322412/354577)'
 
