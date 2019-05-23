@@ -5,7 +5,7 @@ użyłam 'old [shell function technique](https://stackoverflow.com/a/3322412/354
 ```
 git config --global alias.zlib '!f() { git commit --amend && git push origin $1 -f; }; f'
 ```
-inne aliasy (globalny .gitconfig znajduje się w c:/użytkownicy)
+inne aliasy (globalny .gitconfig znajduje się w c:/uzytkownicy)
 ```
 [alias]
 	zlib = "!f() { git commit --amend && git push origin $1 -f; }; f"
