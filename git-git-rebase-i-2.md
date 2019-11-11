@@ -10,7 +10,7 @@ Otwiera rebase interactive mode dla 2 ostatnich commitów
 
 Może zrobić różne zmiany:
 
-* change “pick” on those commits’ lines to “squash”. Commits with “squash” on consecutive lines will be combined into one
+* change “pick” on those commits’ lines to “squash”. Commits with “squash” on consecutive lines will be combined into one \(ale zawsze musi zostać jeden pick do którego zostaną squashed pozostałe\)
 * to quickly drop the commits from your new branch just delete the lines for the commit\(s\) in the interactive rebase prompt
 * jeżeli wybierzesz edit to będzie się zatrzymywał przed rebasem każdego commita: just change`pick`to`edit`for the commits in question, and do a`git commit --amend -s`\(to sign a commit\) and`git rebase --continue`for each commit.
 
