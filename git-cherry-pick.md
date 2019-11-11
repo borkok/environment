@@ -1,3 +1,5 @@
+# GIT cherry-pick
+
 [https://stackoverflow.com/questions/9339429/what-does-cherry-picking-a-commit-with-git-mean](https://stackoverflow.com/questions/9339429/what-does-cherry-picking-a-commit-with-git-mean)
 
 **Cherry picking in git means to choose a commit from one branch and apply it onto another.**

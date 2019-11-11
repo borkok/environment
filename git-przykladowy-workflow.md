@@ -1,3 +1,5 @@
+# GIT przykładowy workflow
+
 **My work**
 
 &gt; git checkout master

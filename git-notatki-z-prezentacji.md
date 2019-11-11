@@ -1,6 +1,8 @@
+# GIT notatki z prezentacji
+
 **Stronka do nauki gita:**  
 [learngitbranching.js.org](https://learngitbranching.js.org/?NODEMO)  
-   \($ git fakeTeamwork\)
+\($ git fakeTeamwork\)
 
 **Rodzaje obiektów przechowywane w git:**  
 pliki=blob  
@@ -25,5 +27,5 @@ _Przykład 2 \(dla production-deployment-scripts\)_
 git rebase develop -i `można wskazać, które commity biorę (pick)`
 
 git checkout `Nadpisze zmiany w katalogu roboczym. Updates files in the working tree to match the version in the index or the specified tree.`  
-git checkout `<branch>` `To prepare for working on <branch>, switch to it by updating the index and the files in the working tree, and by pointing HEAD at    the branch. Local modifications to the files in the working tree are kept, so that they can be committed to the <branch>.`
+git checkout `<branch>` `To prepare for working on <branch>, switch to it by updating the index and the files in the working tree, and by pointing HEAD at the branch. Local modifications to the files in the working tree are kept, so that they can be committed to the <branch>.`
 
