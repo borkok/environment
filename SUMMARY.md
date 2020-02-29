@@ -18,5 +18,5 @@
 * [GIT alias](git-alias.md)
 * [GIT rerere](git-rerere.md)
 * [Odśwież external libraries](odswiez-external-libraries.md)
-* [Zmiany w kilku modułach na raz](zmiany-w-kilku-modulach-na-raz.md)
+* [Wyzwanie Oli Kunysz](wyzwanie-oli-kunysz.md)
 
