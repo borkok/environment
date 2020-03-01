@@ -5,6 +5,7 @@
   Nowa asercja asertAll pozwala (jak Softly) wykonać wszystkie wskazane sprawdzenia
   Lepsze parametyzowalne testy
   https://www.baeldung.com/parameterized-tests-junit-5
+  Nie trzeba się ograniczać - zamiast pojedynczego RunWith plus wiele @Rule, teraz można wiele @ExtendWith  
 
 2. nvmw pomaga ogarnąć wiele wersji node'a  
 
