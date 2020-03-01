@@ -19,6 +19,6 @@
   * [GIT alias](git-alias.md)
   * [GIT rerere](git-rerere.md)
 * [Odśwież external libraries](odswiez-external-libraries.md)
-* [uzywaj NotSupportedException.] (uzywaj-notsupportedexception.md)
+* [uzywaj NotSupportedException](uzywaj-notsupportedexception.md)
 * [Wyzwanie Oli Kunysz](wyzwanie-oli-kunysz.md)
 
