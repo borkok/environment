@@ -11,3 +11,12 @@
 3. Lombok - biblioteka i plugin do intellij
   generates code in ".class" file instead of in the source code file
   daje wiele adnotacji, które pozwalają nie pisać getterów, setterów, constructors, pole logger, klasy builder, toString
+  ale są z nim problemy: https://github.com/jhipster/generator-jhipster/issues/398
+  
+ 4. Builder
+    jak pisać lepsze Buildery, rozwiązanie problemu wymaganych pól: https://blog.tratif.com/2017/11/17/builder-pattern-revisited/
+    a. FluentBuilder pattern - metody zwracają interface wymuszający zawołanie jeszcze konkretnego withXYZ przed build()
+    b. Builder robi validate() w metodzie build(), gdzie sprawdza, czy wymagane pola ustawione
+    c. Zamiast wartości podawane w metodzie withXYZ ustawiać w polu xyz buildera, lub co gorsza tworzonego obiektu, zbieraj listę operations List<Consumer<BudowanaKlasa>> operations, np.: operations.add(user -> user.login = inLogin);
+    d. Builder as an inner class in builded class
+  
