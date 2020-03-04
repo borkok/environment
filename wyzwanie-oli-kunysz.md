@@ -20,4 +20,20 @@
     1. Builder robi validate() w metodzie build(), gdzie sprawdza, czy wymagane pola ustawione
     1. Zamiast wartości podawane w metodzie withXYZ ustawiać w polu xyz buildera, lub co gorsza tworzonego obiektu, zbieraj listę operations List<Consumer<BudowanaKlasa>> operations, np.: operations.add(user -> user.login = inLogin);
     1. Builder as an inner class in builded class
-  
+
+5. Conventional commits
+   
+   One commit per PR  
+
+   Types of commit:  
+
+   - feat: Add a new feature (equivalent to a MINOR in Semantic Versioning).
+   - fix: Fix a bug (equivalent to a PATCH in Semantic Versioning).
+   - docs: Documentation changes.
+   - style: Code style change (semicolon, indentation...).
+   - refactor: Refactor code without changing public API.
+   - perf: Update code performances.
+   - test: Add test to an existing feature.
+   - chore: Update something without impacting the user (ex: bump a dependency in package.json).
+
+https://www.conventionalcommits.org/en/v1.0.0/
