@@ -64,3 +64,29 @@ description: >-
 
   określić jaka funkcjonalność mojej aplikacji nie działa?".
 
+* Logika w testach to zło! Nawet najprostsza!
+
+* Testuj odpowiedzialności, a nie metody. Prosta reguła: "Jedna metoda robi kilka rzeczy? Potrzebujesz kilku testów!".
+
+  * Główna różnica pomiędzy pierwotną wersją a tą zaproponowaną przeze mnie polega na tym, że pierwotna wersja testowała metodę registerUser\(\) podczas gdy aktualna wersja skupia się na testowaniu odpowiedzialności klasy UserRegisterController. W aktualnej wersji każda z metod testowych skupia się na weryfikacji jednej odpowiedzialności klasy. Skoro jedną z odpowiedzialności klasy jest przekierowanie użytkownika po prawidłowym wypełnieniu formularza, to mamy test, który to sprawdza. Innym wymaganiem jest by klasa wysłała powiadomienie po udanej rejestracji. I na to również mamy osobny test.
+
+* Mockować vs tworzyć prawdziwe obiekty
+  * Główną zaletą zastosowania mocka nad użyciem new District\(\) jest to, że mocka nie obchodzi to jak konstruuje się obiekty tej klasy. Ta cecha mocka może okazać się całkiem wartościowa, zwłaszcza w obliczu \(prawdopoobnej\) ewolucji klasy District. Być może już w tej chwili jej konstruktor przyjmuje kilka argumentów. Być może w przyszłości te argumenty "urosną" - zwiększy się ich liczba, lub być może proste typy zostaną zastąpione przez typy złożone
+* given/when/then jest ok, ale nie na siłę zawsze - przy małych testach 2-3 linijkowych testach nie ma sensu
+
+* jak tworzyć obiekty w testach - test data builder
+* * dodawania do kodu prod. konstruktorów/setterów wykorzystywanych specjalnie dla testów
+  * tylko jedna klasa \(budowniczy\) wie jak stworzyć obiekt określonej klasy, więc zmiany będą dotyczyć tylko tej jednej klasy,
+  * builder niech ma znaczące metody, np. `UserBuilder.createActiveUser() .withCompany(company) .create();`
+  * Budowniczy obiektów testowych to wyspecjalizowana klasa odpowiedzialna za tworzenie obiektów określonego typu na potrzeby testów. Sens ich istnienia jest następujący: 
+    * sprawiają, że testy nie wiedzą nic o konstruowaniu obiektów, których używają,
+    * niweluja potrzebę zaśmiecania kodu produkcyjnego dodatkowymi konstruktorami i metodami tworzonymi wyłącznie na potrzeby testów,
+    * standaryzują sposób tworzenia obiektów w kodzie testowym,
+    * dostarczają wygodnych metod, dzięki którym tworzenie obiektów jest bardzo proste \(i przyjemne do czytania\).
+    * `User user = new UserBuilder().standardUser() .but().withEmail("elvis@presley.com")` 
+    * `.and().withPassword("sivle")` 
+    * `.create();`
+    * \`\`
+  * w przypadku obiektów, które mają kilka pól z datami, opłaca się udostępnić metody przyjmujące tekstowe ich reprezentacje \(np. "2015-08-15"\) zamiast konstruować obiekty typu Date.
+  * tak samo lepiej przekazywać liczby całkowite niż BigDecimal.
+
