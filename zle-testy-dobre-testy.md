@@ -38,6 +38,14 @@ description: >-
 
 * Pisanie testu nie polega na odwzorowywaniu kodu produkcyjnego linia po linii!
 
+  * "Zbyt szczegółowe testy są często źródłem wszelkiego zła. Popełnione w nich błędy skutkują opłakanymi w skutkach i długotrwałymi konsekwencjami. Nim się tego nauczyłem przez blisko dwa lata tworzyłem zbyt szczegółowe testy pewnego frameworku, aż w końcu okazało się, że kompletnie uniemożliwiają one jakikolwiek refaktoring. "
+  * Nigdy, przenigdy nie weryfikuj algorytmu metody krok po kroku! Weryfikuj wynik algorytmu! Powinieneś mieć swobodę zmiany implementacji metody, tak długo jak wynik – to czego naprawdę oczekujesz – nie ulegnie zmianie.
+
+* Przerośnięte testy
+
+  * Zamiast jednego testu z rozbudowaną sekcją then zastanów się, czy możesz wydzielić osobne wymagania biznesowe. Rozdzielenie wymagań między trzy testy zapewnia nam dobry feedback.
+  * Uwaga na kopiuj-wklej W przypadku testów metoda kopiuj i wklej prowadzi do: • przerośniętych części tworzących obiekty - kopiowanie prowadzi do tworzenia obiektów z wypełnionymi polami zupełnie nieistotnymi w danym scenariuszu testowym, • zbyt wielu asercji weryfikujących kwestie niezwiązane z danym przypadkiem testowym.
+
 * verifyNoMoreInteractions\(\) powinna
 
   być używana z rozwagą. Jak zaznaczono w dokumentacji Mockito: "Używać
