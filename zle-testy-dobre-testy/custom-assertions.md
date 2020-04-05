@@ -10,9 +10,18 @@ Całkiem sensowne wydaje się też stworzenie własnych asercji dla najważniejs
 
 Przykłady:
 
-`TxDTOAssert.assertThatFile("response.csv").hasTransaction("123cancel").withResultCode(SUCCESS);` 
+```text
+TxDTOAssert
+.assertThatFile("response.csv")
+.hasTransaction("123cancel")
+.withResultCode(SUCCESS); 
+```
 
-```SSHServerAssert.assertThat(ARTIFACT_FILE_NAME).existsOnServer(config).hasSize(WAR_FILE_LENGTH)```
+```text
+SSHServerAssert.assertThat(ARTIFACT_FILE_NAME)
+.existsOnServer(config)
+.hasSize(WAR_FILE_LENGTH)
+```
 
 Spraw by testy i asercje mówiły w języku dziedziny problemu, a nie w języku szczegółów implementacyjnych.
 

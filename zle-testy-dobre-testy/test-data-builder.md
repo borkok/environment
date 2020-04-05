@@ -16,10 +16,24 @@ Budowniczy obiektów testowych to wyspecjalizowana klasa odpowiedzialna za tworz
 * niwelują potrzebę zaśmiecania kodu produkcyjnego dodatkowymi konstruktorami i metodami tworzonymi wyłącznie na potrzeby testów,
 * standaryzują sposób tworzenia obiektów w kodzie testowym,
 * dostarczają wygodnych metod, dzięki którym tworzenie obiektów jest bardzo proste \(i przyjemne do czytania\).
-* `User user = new UserBuilder().standardUser() .but().withEmail("elvis@presley.com")` 
-* `.and().withPassword("sivle")` 
-* `.create();`
 
-* w przypadku obiektów, które mają kilka pól z datami, opłaca się udostępnić metody przyjmujące tekstowe ich reprezentacje \(np. "2015-08-15"\) zamiast konstruować obiekty typu Date.
-* tak samo lepiej przekazywać liczby całkowite niż BigDecimal.
+Przykłady:
+
+```text
+User user = new UserBuilder().standardUser() 
+.but().withEmail("elvis@presley.com") 
+.and().withPassword("sivle") 
+.create();
+```
+
+```text
+Artifact artifact = new ArtifactBuilder()
+ .validArtifact()
+ .withVersion(version)
+ .build();
+```
+
+w przypadku obiektów, które mają kilka pól z datami, opłaca się udostępnić metody przyjmujące tekstowe ich reprezentacje \(np. "2015-08-15"\) zamiast konstruować obiekty typu Date.
+
+tak samo lepiej przekazywać liczby całkowite niż BigDecimal.
 
