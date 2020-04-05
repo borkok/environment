@@ -72,8 +72,8 @@ description: >-
   * Główną zaletą zastosowania mocka nad użyciem new District\(\) jest to, że mocka nie obchodzi to jak konstruuje się obiekty tej klasy. Ta cecha mocka może okazać się całkiem wartościowa, zwłaszcza w obliczu \(prawdopoobnej\) ewolucji klasy District. Być może już w tej chwili jej konstruktor przyjmuje kilka argumentów. Być może w przyszłości te argumenty "urosną" - zwiększy się ich liczba, lub być może proste typy zostaną zastąpione przez typy złożone
 * given/when/then jest ok, ale nie na siłę zawsze - przy małych testach 2-3 linijkowych testach nie ma sensu
 
-* jak tworzyć obiekty w testach - test data builder
-* 
+* jak tworzyć obiekty w testach - **test data builder** [test-data-builder](https://app.gitbook.com/@kinga/s/environment/zle-testy-dobre-testy/test-data-builder)
+
 * nadawaj staranne nazwy zmiennym, np. zamiast user1, user2, user3 =&gt; userWith1PLEntry, userWith4PLEntries. Łatwo o pomyłkę gdy nazwy zmiennych różnią się tylko nieznacznie. Nie używaj sufiksów ani prefixów do odróżniania poszczególnych zmiennych w testach! Tak dobierz nazwy obiektów, by jasno określały ich specyfikę
 * Myśląc o nazwie metody testowej zostawmy w spokoju implementację. Liczą się wymagania. Autor zaleca nazywanie metod od should
 * 
