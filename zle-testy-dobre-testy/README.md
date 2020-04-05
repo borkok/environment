@@ -76,4 +76,9 @@ description: >-
 
 * nadawaj staranne nazwy zmiennym, np. zamiast user1, user2, user3 =&gt; userWith1PLEntry, userWith4PLEntries. Łatwo o pomyłkę gdy nazwy zmiennych różnią się tylko nieznacznie. Nie używaj sufiksów ani prefixów do odróżniania poszczególnych zmiennych w testach! Tak dobierz nazwy obiektów, by jasno określały ich specyfikę
 * Myśląc o nazwie metody testowej zostawmy w spokoju implementację. Liczą się wymagania. Autor zaleca nazywanie metod od should
-* 
+
+* Unikaj porównywania do oczekiwanego obiektu `assertThat(result).isEqualTo(expectedResult);`
+  * Porównywanie obiektów sprawia, że warstwa biznesowa testu staje się mniej czytelna, a na pierwszy plan wysuwają się szczegóły techniczne. Historia opowiadana przez test zanika: końcówka testu mówi tylko, że jakieś dwa obiekty powinny być identyczne. Raczej sugerowałbym napisanie kilku asercji \(lub stworzenie jednej własne\), co pozwoli na lepsze wyrażenie intencji testu.
+  * Jeżeli klasa DataModel nie posiada rozsądnej implementacji metody toString\(\), wówczas jeżeli test nie przejdzie, dowiemy się raczej niewiele. Być może zobaczymy taki oto komunikat: org.junit.ComparisonFailure: Expected :my.company.DataModel@e6037658 Actual :my.company.DataModel@4af66537
+  * Innym problemem jest to, że taki test porównujący całe obiekty może nie przejść z powodu różnicy w zawartości obiektów zupełnie nieistotnej w kontekście rozpatrywanego scenariusza.
+
