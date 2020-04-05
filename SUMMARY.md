@@ -1,7 +1,9 @@
 # Table of contents
 
 * [Strona tytułowa](README.md)
-* [Złe testy, dobre testy](zle-testy-dobre-testy.md)
+* [Złe testy, dobre testy](zle-testy-dobre-testy/README.md)
+  * [Test Data Builder](zle-testy-dobre-testy/test-data-builder.md)
+  * [Custom Assertions](zle-testy-dobre-testy/custom-assertions.md)
 * [GIT](git/README.md)
   * [Pierwszy Merge Request](git/first-question.md)
   * [GIT komendy](git/komendy-git.md)
